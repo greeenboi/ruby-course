@@ -1,7 +1,12 @@
+require 'json'
 userobject = {
   "name" => "string",
-  :age => "number",
+  "age" => "number",
   "male" => "boolean"
 }
 
-puts userobject[:age]
+puts userobject["male"]
+
+json = userobject.to_json
+
+puts json
